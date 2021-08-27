@@ -1,5 +1,3 @@
-#![feature(allocator_api)]
-
 extern crate libc;
 extern crate time;
 
@@ -7,7 +5,7 @@ use std::mem;
 use std::process;
 use std::fs::File;
 use std::os::unix::io::AsRawFd;
-use std::alloc::{GlobalAlloc, System, Layout, AllocErr};
+use std::alloc::{GlobalAlloc, System, Layout, AllocError};
 use std::sync::atomic::{AtomicBool, ATOMIC_BOOL_INIT, Ordering};
 use libc::c_void;
 
