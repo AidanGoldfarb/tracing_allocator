@@ -1,3 +1,5 @@
+#![feature(allocator_api)]
+
 extern crate libc;
 extern crate time;
 
